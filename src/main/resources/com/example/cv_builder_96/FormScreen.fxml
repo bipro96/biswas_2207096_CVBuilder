@@ -5,10 +5,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.*?>
 
-<ScrollPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cv_builder_96.FormScreenController">
+<ScrollPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.cv_builder_96.FormScreenController">
 
     <content>
-        <VBox spacing="20">
+        <VBox spacing="20" style="-fx-background-color: #D1D2DD;">
             <padding>
                 <Insets top="20" bottom="20" left="20" right="20"/>
             </padding>
@@ -16,7 +17,8 @@
 
             <VBox spacing="10" alignment="CENTER_LEFT">
                 <Label text="Profile Photo" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
-                <ImageView fx:id="profileImageView" fitHeight="150" fitWidth="150"
+                <ImageView fx:id="profileImageView"
+                           fitHeight="150" fitWidth="150"
                            style="-fx-border-color:gray; -fx-border-width:1;"/>
                 <Button text="Choose Profile Photo" onAction="#handleChoosePhoto"/>
             </VBox>

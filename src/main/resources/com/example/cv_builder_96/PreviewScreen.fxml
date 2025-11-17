@@ -5,6 +5,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
 
 <ScrollPane fx:id="scrollPane" fitToWidth="true"
             xmlns="http://javafx.com/javafx"
@@ -13,65 +14,88 @@
 
     <AnchorPane fx:id="rootPane" prefWidth="600">
 
-        <VBox fx:id="contentBox" layoutX="0" layoutY="0" spacing="20"
-              prefWidth="600" style="-fx-background-color: #EAF2FF;">
+        <VBox fx:id="contentBox"
+              layoutX="0" layoutY="0"
+              spacing="25"
+              prefWidth="600"
+              style="-fx-background-color: #D1D2DD; -fx-padding: 30;">
 
-            <!-- IMAGE -->
             <ImageView fx:id="previewImageView"
-                       fitWidth="250" fitHeight="250"
-                       preserveRatio="true" />
+                       fitWidth="230" fitHeight="230"
+                       preserveRatio="true"
+                       style="-fx-border-color: #444; -fx-border-width: 2;" />
 
-            <!-- BASIC INFO -->
             <Label text="Basic Information"
-                   style="-fx-font-size: 28px; -fx-font-weight: bold;"/>
+                   style="-fx-font-size: 30px; -fx-font-weight: bold;"/>
 
-            <Label text="Name:"/>
-            <Label fx:id="nameLabel"/>
+            <HBox spacing="10">
+                <Label text="Name:" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Label fx:id="nameLabel" style="-fx-font-size: 18px;"/>
+            </HBox>
 
-            <Label text="Email:"/>
-            <Label fx:id="emailLabel"/>
+            <HBox spacing="10">
+                <Label text="Email:" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Label fx:id="emailLabel" style="-fx-font-size: 18px;"/>
+            </HBox>
 
-            <Label text="Phone:"/>
-            <Label fx:id="phoneLabel"/>
+            <HBox spacing="10">
+                <Label text="Phone:" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Label fx:id="phoneLabel" style="-fx-font-size: 18px;"/>
+            </HBox>
 
-            <Label text="Address:"/>
-            <Label fx:id="addressLabel"/>
+            <HBox spacing="10">
+                <Label text="Address:" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Label fx:id="addressLabel" wrapText="true" style="-fx-font-size: 18px;"/>
+            </HBox>
 
-            <!-- EDUCATION -->
             <Label text="Education"
-                   style="-fx-font-size: 28px; -fx-font-weight: bold;"/>
+                   style="-fx-font-size: 30px; -fx-font-weight: bold;"/>
 
-            <Label text="Degree:"/>
-            <Label fx:id="degreeLabel"/>
+            <HBox spacing="10">
+                <Label text="Degree:" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Label fx:id="degreeLabel" style="-fx-font-size: 18px;"/>
+            </HBox>
 
-            <Label text="Institution:"/>
-            <Label fx:id="institutionLabel"/>
+            <HBox spacing="10">
+                <Label text="Institution:" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Label fx:id="institutionLabel" style="-fx-font-size: 18px;"/>
+            </HBox>
 
-            <Label text="Year:"/>
-            <Label fx:id="yearLabel"/>
+            <HBox spacing="10">
+                <Label text="Year:" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Label fx:id="yearLabel" style="-fx-font-size: 18px;"/>
+            </HBox>
 
-            <!-- WORK EXPERIENCE -->
             <Label text="Work Experience"
-                   style="-fx-font-size: 28px; -fx-font-weight: bold;"/>
+                   style="-fx-font-size: 30px; -fx-font-weight: bold;"/>
 
-            <Label text="Job Title:"/>
-            <Label fx:id="jobTitleLabel"/>
+            <HBox spacing="10">
+                <Label text="Job Title:" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Label fx:id="jobTitleLabel" style="-fx-font-size: 18px;"/>
+            </HBox>
 
-            <Label text="Company:"/>
-            <Label fx:id="companyLabel"/>
+            <HBox spacing="10">
+                <Label text="Company:" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Label fx:id="companyLabel" style="-fx-font-size: 18px;"/>
+            </HBox>
 
-            <Label text="Duration:"/>
-            <Label fx:id="durationLabel"/>
+            <HBox spacing="10">
+                <Label text="Duration:" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Label fx:id="durationLabel" style="-fx-font-size: 18px;"/>
+            </HBox>
 
-            <!-- PROJECTS -->
             <Label text="Projects"
-                   style="-fx-font-size: 28px; -fx-font-weight: bold;"/>
+                   style="-fx-font-size: 30px; -fx-font-weight: bold;"/>
 
-            <Label text="Project Title:"/>
-            <Label fx:id="projectTitleLabel"/>
+            <HBox spacing="10">
+                <Label text="Project Title:" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Label fx:id="projectTitleLabel" style="-fx-font-size: 18px;"/>
+            </HBox>
 
-            <Label text="Description:"/>
-            <Label fx:id="projectDescriptionLabel"/>
+            <HBox spacing="10">
+                <Label text="Description:" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Label fx:id="projectDescriptionLabel" wrapText="true" style="-fx-font-size: 18px;"/>
+            </HBox>
 
         </VBox>
 
