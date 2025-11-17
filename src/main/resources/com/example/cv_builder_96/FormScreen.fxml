@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<ScrollPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cv_builder_96.FormScreenController">
+
+    <content>
+        <VBox spacing="20">
+            <padding>
+                <Insets top="20" bottom="20" left="20" right="20"/>
+            </padding>
+
+
+            <VBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Profile Photo" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+                <ImageView fx:id="profileImageView" fitHeight="150" fitWidth="150"
+                           style="-fx-border-color:gray; -fx-border-width:1;"/>
+                <Button text="Choose Profile Photo" onAction="#handleChoosePhoto"/>
+            </VBox>
+
+
+            <VBox spacing="10">
+                <Label text="Basic Information" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+
+                <HBox spacing="10">
+                    <Label text="Name:" prefWidth="120"/>
+                    <TextField fx:id="nameField"/>
+                </HBox>
+
+                <HBox spacing="10">
+                    <Label text="Email:" prefWidth="120"/>
+                    <TextField fx:id="emailField"/>
+                </HBox>
+
+                <HBox spacing="10">
+                    <Label text="Phone:" prefWidth="120"/>
+                    <TextField fx:id="phoneField"/>
+                </HBox>
+
+                <HBox spacing="10">
+                    <Label text="Address:" prefWidth="120"/>
+                    <TextArea fx:id="addressField" prefRowCount="3"/>
+                </HBox>
+            </VBox>
+
+
+            <VBox spacing="10">
+                <Label text="Education" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+
+                <HBox spacing="10">
+                    <Label text="Degree:" prefWidth="120"/>
+                    <TextField fx:id="degreeField"/>
+                </HBox>
+
+                <HBox spacing="10">
+                    <Label text="Institution:" prefWidth="120"/>
+                    <TextField fx:id="institutionField"/>
+                </HBox>
+
+                <HBox spacing="10">
+                    <Label text="Year:" prefWidth="120"/>
+                    <TextField fx:id="yearField"/>
+                </HBox>
+            </VBox>
+
+
+            <VBox spacing="10">
+                <Label text="Work Experience" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+
+                <HBox spacing="10">
+                    <Label text="Job Title:" prefWidth="120"/>
+                    <TextField fx:id="jobTitleField"/>
+                </HBox>
+
+                <HBox spacing="10">
+                    <Label text="Company:" prefWidth="120"/>
+                    <TextField fx:id="companyField"/>
+                </HBox>
+
+                <HBox spacing="10">
+                    <Label text="Duration:" prefWidth="120"/>
+                    <TextField fx:id="durationField"/>
+                </HBox>
+            </VBox>
+
+
+            <VBox spacing="10">
+                <Label text="Project" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+
+                <HBox spacing="10">
+                    <Label text="Project Title:" prefWidth="120"/>
+                    <TextField fx:id="projectTitleField"/>
+                </HBox>
+
+                <HBox spacing="10">
+                    <Label text="Description:" prefWidth="120"/>
+                    <TextArea fx:id="projectDescriptionField" prefRowCount="3"/>
+                </HBox>
+            </VBox>
+
+            <Button text="Preview CV" onAction="#handlePreview" maxWidth="200"/>
+        </VBox>
+    </content>
+</ScrollPane>
