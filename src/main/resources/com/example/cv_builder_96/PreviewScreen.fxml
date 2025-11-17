@@ -35,7 +35,16 @@
             <Label style="-fx-font-size:18px; -fx-font-weight:bold;" text="Education" />
             <Label text="Degree:" /><Label fx:id="degreeLabel" />
             <Label text="Institution:" /><Label fx:id="institutionLabel" />
-            <Label text="Year:" /><Label fx:id="yearLabel" /><Label fx:id="jobTitleLabel" /><Label fx:id="companyLabel" /><Label fx:id="durationLabel" /><Label fx:id="projectTitleLabel" /><Label fx:id="projectDescriptionLabel" />
+            <Label text="Year:" /><Label fx:id="yearLabel" />
+
+            <Label style="-fx-font-size:18px; -fx-font-weight:bold;" text="Work Experience" />
+            <Label text="Job Title:" /><Label fx:id="jobTitleLabel" />
+            <Label text="Company:" /><Label fx:id="companyLabel" />
+            <Label text="Duration:" /><Label fx:id="durationLabel" />
+
+            <Label style="-fx-font-size:18px; -fx-font-weight:bold;" text="Project" />
+            <Label text="Project Title:" /><Label fx:id="projectTitleLabel" />
+            <Label text="Description:" /><Label fx:id="projectDescriptionLabel" />
 
         </VBox>
     </content>
