@@ -8,6 +8,7 @@ module com.example.cv_builder_96 {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires com.almasb.fxgl.all;
+    requires java.sql;
 
     opens com.example.cv_builder_96 to javafx.fxml;
     exports com.example.cv_builder_96;
