@@ -35,7 +35,6 @@ public class FormScreenController {
     @FXML private ImageView profileImageView;
     private File selectedImageFile;
 
-
     @FXML
     private void handleChoosePhoto() {
         FileChooser chooser = new FileChooser();
@@ -47,6 +46,28 @@ public class FormScreenController {
             selectedImageFile = file;
             profileImageView.setImage(new Image(file.toURI().toString()));
         }
+    }
+
+
+    @FXML
+    private void handleSaveToDatabase() {
+
+        Database.insertUser(
+                nameField.getText(),
+                emailField.getText(),
+                phoneField.getText(),
+                addressField.getText(),
+                degreeField.getText(),
+                institutionField.getText(),
+                yearField.getText(),
+                jobTitleField.getText(),
+                companyField.getText(),
+                durationField.getText(),
+                projectTitleField.getText(),
+                projectDescriptionField.getText()
+        );
+
+        System.out.println("Saved!");
     }
 
 
