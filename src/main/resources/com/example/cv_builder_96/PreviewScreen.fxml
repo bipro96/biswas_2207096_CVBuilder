@@ -2,6 +2,7 @@
 
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.VBox?>
@@ -9,7 +10,7 @@
 
 <ScrollPane fx:id="scrollPane" fitToWidth="true"
             xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
+            xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.example.cv_builder_96.PreviewScreenController">
 
     <AnchorPane fx:id="rootPane" prefWidth="600">
@@ -71,7 +72,7 @@
 
             <HBox spacing="10">
                 <Label text="Job Title:" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
-                <Label fx:id="jobTitleLabel" style="-fx-font-size: 18px;"/>
+                <Label fx:id="jobLabel" style="-fx-font-size: 18px;"/>
             </HBox>
 
             <HBox spacing="10">
@@ -94,7 +95,15 @@
 
             <HBox spacing="10">
                 <Label text="Description:" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
-                <Label fx:id="projectDescriptionLabel" wrapText="true" style="-fx-font-size: 18px;"/>
+                <Label fx:id="projectDescLabel" wrapText="true"
+                       style="-fx-font-size: 18px;"/>
+            </HBox>
+
+            <HBox spacing="20" alignment="CENTER">
+                <Button fx:id="editButton" text="Edit" onAction="#handleEdit"
+                        style="-fx-font-size: 18px; -fx-padding: 8 18;" />
+                <Button fx:id="deleteButton" text="Delete" onAction="#handleDelete"
+                        style="-fx-font-size: 18px; -fx-padding: 8 18; -fx-background-color: #E53935; -fx-text-fill: white;" />
             </HBox>
 
         </VBox>
